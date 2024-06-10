@@ -278,6 +278,7 @@ main li{
 }
 
 main .postuler .container {
+    margin: 50%;
     display: flex;
     align-items: center;
     justify-content: space-between;
