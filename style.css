@@ -281,10 +281,8 @@ main .postuler .container {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    margin: 50px;
     color: #000000;
     text-align: center;
-    margin-left: 95px;
 }
 
 .postuler  h2{
