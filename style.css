@@ -1,0 +1,685 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@1,438&display=swap');
+
+
+
+body{
+    margin: 0;
+    padding: 0;
+}
+a{ text-decoration: none;}
+header{
+    background-color: rgb(16, 15, 15);
+    
+
+}
+
+header .conteneur{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+header .conteneur .logo img{
+    border-radius: 10px;
+    margin-left: -89px;
+    margin-top: 20px;
+}
+
+header .conteneur .icones{
+    margin-right: -73px;
+}
+header .conteneur .icones img{
+    width: 35px;
+    margin-left: 20px;
+
+}
+
+
+header nav{
+    font-family: "Montserrat", sans-serif;
+    font-size: 18px;
+    margin-right: 20px;
+    
+    
+}
+header nav .menu {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    background-color: rgb(16, 15, 15);
+    margin-left: 16px;
+  }
+  header nav .menu > li {
+    position: relative;
+  }
+  header  nav .menu > li > a {
+    text-decoration: none;
+    font-weight: bold;
+    color: white;
+    display: block;
+    padding: 15px 20px;
+  }
+   header nav .menu > li > a:hover {
+    color: red;
+    transition: 1s ease;
+   
+  }
+  header nav .submenu {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: white;
+   
+    display: none;
+    z-index: 1000;
+  }
+   header nav .submenu li {
+    width: 200px;
+  }
+header  nav .submenu li a {
+    text-decoration: none;
+    color: #000000;
+    display: block;
+    padding: 10px;
+    background-color: white;
+   
+  }
+ header nav  .submenu li a:hover {
+    background-color: #f0f0f0;
+  }
+  header nav .menu > li:hover .submenu {
+    display: block;
+  }
+
+header .conteneur2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 20px;
+    position: relative
+}
+
+header .conteneur2 .boutton button{
+    min-width: 130px;
+    height: 40px;
+    color: #fff;
+    padding: 5px 10px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 1s ease;
+    position: relative;
+    display: inline-block;
+    outline: none;
+    border-radius: 20px;
+    border: 2px solid #d90429;
+    background: #d90429;
+    font-size: 20px;
+    margin-right: 40px;
+    font-family: "Montserrat", sans-serif;
+    
+}
+
+header .conteneur2 .boutton button:hover{
+    background: #fff;
+  color: #d90429
+}
+
+
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@1,438&display=swap');
+
+/* Styles de base */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color:black;
+    color: white;
+    font-family: "Montserrat", sans-serif;
+}
+
+main {
+    padding: 20px;
+}
+
+
+main .titre {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   flex-direction: column;
+   font-size: 18px;
+   margin-bottom: 70px;
+}
+
+main .titre h1{
+    text-decoration: underline;
+}
+
+
+ main .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 80%;
+    max-width: 1200px;
+    background-color: #fff;
+    padding: 20px;
+    margin: 20px auto;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+}
+
+
+
+main .first-text, .second-text {
+    width: 100%;
+    margin: 20px 0;
+    text-align: center;
+   
+}
+
+main .first-text, .second-text h2{
+    margin-top: 40px;
+    font-size: 14px;
+}
+
+ main .first-text h3 {
+    font-size: 28px;
+    margin: 0;
+}
+
+main .second-text {
+    font-size: 2em;
+    margin: 0;
+}
+
+ main .image-gauche {
+    border-radius: 10px;
+    max-width: 45%;
+    height: auto;
+}
+
+ main .texte-droite {
+    max-width: 45%;
+    margin-left: 20px;
+    text-align: justify;
+    color: black;
+}
+
+main .texte-droite p {
+    font-size: 18px;
+    line-height: 1.6;
+}
+
+main .full-width-image {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    margin: 20px 0;
+}
+
+main .main-formation {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+main .frame {
+    background-color: #fff;
+    padding: 20px;
+    margin: 10px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    max-width: 55%;
+    text-align: center;
+   
+}
+main .frame ul{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-left: -40px;
+}
+ main .frame h2{
+    color: black;
+}
+
+ main .price {
+    font-size: 1.2em;
+    color: #e74c3c;
+}
+
+ main .learn-more {
+    background-color: black;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 1em;
+    border-radius: 5px;
+    cursor: pointer;
+    text-transform: uppercase;
+    
+}
+
+main .learn-more:hover {
+    background-color: gray;
+    transition: ease-in 1s;
+}
+main li{
+    list-style-type: none;
+    color: black;
+}
+
+main .postuler .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 50px;
+    color: #000000;
+    text-align: center;
+    margin-left: 95px;
+}
+
+.postuler  h2{
+    text-align: center;
+    margin-top: 45px;
+}
+main .step {
+    text-align: center;
+   
+}
+.step h1 {
+    font-size: 3em;
+    margin: 0;
+}
+.step h2 {
+    margin: 5px 0 5px 0;
+    font-size: 1.5em;
+}
+.step p {
+    margin: 0;
+}
+.arrow {
+    font-size: 2em;
+    color: rg
+}
+
+
+@media (max-width: 1200px) {
+    main .postuler .container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .arrow {
+        transform: rotate(90deg);
+    }
+}
+
+@media (max-width: 768px) {
+    main .postuler .container {
+        margin: 20px;
+    }
+
+    .step h1 {
+        font-size: 2em;
+    }
+
+    .step h2 {
+        font-size: 1.2em;
+    }
+
+    .arrow {
+        transform: rotate(90deg);
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+footer {
+    padding: 20px 0px;
+    background-color: rgb(16, 15, 15);
+    color: white;
+    font-family: "Montserrat", sans-serif;
+    margin-top: 15px;
+    text-align: center;
+}
+
+/* Style du conteneur principal */
+footer .conteneur {
+    
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    max-width: 1200px;
+    margin: 0 auto;
+    flex-wrap: wrap;
+}
+
+
+footer .sous-conteneur {
+    flex: 1;
+    padding: 10px;
+    text-align: center;
+    flex: 1;
+    max-width: 300px;
+    margin: 10px;
+    color: white;
+}
+
+footer .titre img {
+    display: block;
+    margin: 0 auto 20px auto;
+    max-width: 100%;
+    height: auto;
+}
+
+
+footer h2 {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+}
+
+footer p {
+    font-size: 1em;
+    line-height: 1.5;
+}
+
+footer p a{
+    color: white;
+    border-bottom: 1px solid white;
+}
+
+
+/* Media queries pour les petits écrans */
+@media screen and (max-width: 768px) {
+    footer .conteneur {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    footer .sous-conteneur {
+        max-width: 100%;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media screen and (max-width: 600px) {
+    .main {
+        padding: 10px;
+    }
+
+    .frame {
+        width: 100%;
+        
+    }
+
+}
+
+@media screen and (max-width: 600px) {
+    .sous-conteneur {
+        flex-basis: 100%;
+    }
+}
+
+
+/* Media queries pour les petits écrans (téléphones) */
+@media screen and (max-width: 768px) {
+    /* Ajustements pour les petits écrans ici */
+    main .container {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    main .image-gauche {
+        max-width: 100%;
+        height: auto;
+    }
+
+    main .texte-droite {
+        max-width: 100%;
+        margin-left: 0;
+    }
+
+    main .frame {
+        max-width: 100%;
+        margin: 10px 0;
+        text-align: center;
+    }
+
+    header .conteneur2 .boutton button {
+        margin-right: 0;
+    }
+}
+
+/* Media queries pour les écrans encore plus petits (téléphones en mode portrait) */
+@media screen and (max-width: 480px) {
+    /* Ajustements pour les écrans encore plus petits ici */
+    main .image-gauche {
+        max-width: 100%;
+        height: auto;
+    }
+
+    main .full-width-image {
+        max-width: 100%;
+        height: auto;
+    }
+
+    main .texte-droite {
+        max-width: 100%;
+        margin-left: 0;
+    }
+
+    main .frame {
+        max-width: 100%;
+        margin: 10px 0;
+        text-align: center;
+        
+    }
+
+    header .conteneur .logo img {
+        width: 100%;
+    }
+
+    header .conteneur .icones img {
+        width: 30px;
+    }
+
+    header .conteneur2 .boutton button {
+        font-size: 16px;
+        margin-right: 0;
+    }
+}
+
+/* Ajoutez ces règles pour ajuster la position sur les téléphones */
+@media screen and (max-width: 480px) {
+    header .conteneur .icones img {
+        margin-left: 20px; /* Vous pouvez ajuster cette valeur selon vos besoins */
+    }
+}
+
+
+
+
+
+
+
+/* Responsive Styles */
+@media (max-width: 1024px) {
+    header .conteneur {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    header .conteneur .logo img {
+        margin-left: 0;
+        margin-top: 10px;
+    }
+
+    header .conteneur .icones {
+        margin-right: 0;
+        margin-top: 10px;
+    }
+
+    header .conteneur2 {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    nav .menu {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    nav .menu > li {
+        width: 100%;
+    }
+
+    nav .menu > li > a {
+        text-align: center;
+        padding: 10px;
+    }
+
+    header .conteneur2 .boutton {
+        margin-top: 20px;
+    }
+
+    header .conteneur2 .boutton button {
+        width: 100%;
+        margin: 10px 0;
+    }
+}
+
+@media (max-width: 768px) {
+    header .conteneur {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    header .conteneur .logo img {
+        margin-left: 0;
+        margin-top: 10px;
+    }
+
+    header .conteneur .icones {
+        margin-right: 0;
+        margin-top: 10px;
+    }
+
+    header .conteneur2 {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    header nav .menu {
+        flex-direction: column;
+        align-items: center;
+    }
+
+   header nav .menu > li {
+        width: 100%;
+    }
+
+   header nav .menu > li > a {
+        text-align: center;
+        padding: 10px;
+    }
+
+    header .conteneur2 .boutton {
+        margin-top: 20px;
+    }
+
+    header .conteneur2 .boutton button {
+        width: 100%;
+        margin: 10px 0;
+    }
+}
+
+@media (max-width: 480px) {
+    header nav .menu {
+        margin-left: 0;
+    }
+
+   header nav .menu > li > a {
+        padding: 10px 15px;
+    }
+
+    header .conteneur .logo img {
+        width: 100%;
+    }
+
+    header .conteneur .icones img {
+        width: 30px;
+    }
+
+    header .conteneur2 .boutton button {
+        font-size: 16px;
+        margin-right: 0;
+    }
+}
+

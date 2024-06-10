@@ -1,0 +1,415 @@
+<!DOCTYPE html>
+  <html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="collectif.css">
+    <link rel="shortcut icon" href="images-icon.webp">
+    <title>Le collectif Demain le printemps</title>
+  </head>
+  <body>
+    <!-- En-tête de la page -->
+   <header>
+    <!-- Conteneur du logo et des icônes de réseaux sociaux -->
+    <div class="conteneur">
+        <!-- Logo -->
+        <div class="logo">
+            <a href=""><img src="https://www.ecole-theatrale.com/images/partenaires/Logo_DLP.png" width="290px" alt=""></a>
+        </div>
+        <!-- Icônes de réseaux sociaux -->
+        <div class="icones">
+            <a href="https://www.instagram.com/demainleprintemps?igsh=eWc1bHJqZ3NnN3d6" target="_blank"><img src="instagram.png" alt="Instagram"></a>
+            <a href="https://www.facebook.com/share/rHpaiGdb5vSHbYr9/?mibextid=LQQJ4d" target="_blank"><img src="facebook.png" alt="Facebook"></a>
+            <a href="https://x.com/ecoletheatrale?s=21&t=O5NOC0WPUXTLkObxIAntFA" target="_blank"><img src="twitter.png" alt="Twitter"></a>
+            <a href="https://youtube.com/@demainleprintempsecolethea2147?si=VA9rE7H1rggAMFvh" target="_blank"><img src="youtube.png" alt="YouTube"></a>
+        </div>
+    </div>
+    <!-- Barre de navigation -->
+     <div class="sticky">
+
+    
+    <div class="conteneur2">
+        <nav>
+            <ul class="menu">
+                <!-- Éléments du menu -->
+                <li>
+                    <a href="index.html">École</a>
+                    <!-- Sous-menu -->
+                    <ul class="submenu">
+                        <li><a href="">Contenu Pédagogique</a></li>
+                        <li><a href="#">Notre équipe Pédagogique</a></li>
+                        <li><a href="#">Nos Disciplines</a></li>
+                        <li><a href="#">Pas besoins de parler russe</a></li>
+                        <li><a href="#">Tarifs et devis</a></li>
+                        <li><a href="#">Se cultiver</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#">Formation +</a>
+                    <ul class="submenu">
+                        <li><a href="#">Le stage d'un mois</a></li>
+                        <li><a href="#">La masterclass 10 mois</a></li>
+                        <li><a href="#">Admissions</a></li>
+                        <li><a href="#">Ateliers découverte</a></li>
+                        <li><a href="#">Hébergement</a></li>
+                        <li><a href="#">Diplômes de fin de formation</a></li>
+                        <li><a href="#">Programmes spéciaux pour le Maghreb</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#">Les élèves +</a>
+                    <ul class="submenu">
+                        <li><a href="portraitancien.html">Portrait d'anciens</a></li>
+                        <li><a href="https://demainleprintemps.wordpress.com/" target="_blank" >Blog</a></li>
+                    </ul>
+                </li>
+                <li><a href="presse-multimedia.html">Presse et Multimédia</a></li>
+                <li>
+                    <a href="">Associations +</a>
+                    <ul class="submenu">
+                        <li><a href="#">D.L.P</a></li>
+                        <li><a href="#">Collectif</a></li>
+                        <li><a href="http://www.moo-teatro.by/" target="_blank">Moo treatro</a></li>
+                
+                        <li><a href="https://ecole-theatrale.com/images/pdf/Asso_DLP_adh%C3%A9sion(2018).pdf" target="_blank">Nous soutenir</a></li>
+                        <li><a href="Partenaires.html">Partenaires</a></li>
+                        <li><a href="developpeur.html">Développeurs</a></li>
+                    </ul>
+                </li>
+                <li><a href="Actualite.html">Actualités</a></li>
+            </ul>
+        </nav>
+        <!-- Bouton de contact WhatsApp -->
+        <div class="boutton">
+            <a href="https://wa.me/+33615199248?text=Hello%2C%20I'm%20interested%20in%20your%20school.%20Could%20you%20provide%20me%20with%20more%20information%3F" target="_blank" class="whatsapp-link"><button>+33 6 15 19 92 48</button></a>
+        </div>
+    </div>
+     </div>
+    <!-- Script JavaScript -->
+<script>
+    document.addEventListener('DOMContentLoaded', function() {
+        // Gestion de l'ouverture des sous-menus
+        var menuItems = document.querySelectorAll('nav .menu > li > a');
+        var openSubmenu = null;
+
+        menuItems.forEach(function(menuItem) {
+            menuItem.addEventListener('click', function(event) {
+                var submenu = this.nextElementSibling;
+
+                if (submenu && submenu.classList.contains('submenu')) {
+                    if (submenu.style.display === 'block') {
+                        // Si le sous-menu est déjà ouvert, suivre le lien
+                        return true;
+                    } else {
+                        // Si le sous-menu n'est pas ouvert, l'ouvrir et empêcher l'action par défaut
+                        event.preventDefault();
+                        closeAllSubmenus();
+                        submenu.style.display = 'block';
+                        openSubmenu = submenu;
+                    }
+                }
+            });
+        });
+
+        document.addEventListener('click', function(event) {
+            if (openSubmenu && !event.target.closest('nav .menu > li')) {
+                openSubmenu.style.display = 'none';
+                openSubmenu = null;
+            }
+        });
+
+        function closeAllSubmenus() {
+            var submenus = document.querySelectorAll('nav .submenu');
+            submenus.forEach(function(submenu) {
+                submenu.style.display = 'none';
+            });
+        }
+    });    
+    
+      </script>
+</header>
+
+
+<main>
+    
+<div class="titre">
+    <h1>Le collectif Demain le printemps</h1>
+ </div>
+ 
+ <div class="conteneur">
+ 
+ <div class="case">
+     <img src="fabrice carrey Clt.jpg" width="290" height="300" alt="">
+      <h2>Fabrice Carrey</h2>
+      <p>Direction et Organisation</p>
+ </div>
+ <div class="case">
+     <img src="serguei.jpg" width="290" height="300" alt="Serguei Nikolaevich Tarasiuk">
+     <h2>Serguei Nikolaevich Tarasiuk</h2>
+     <p>Cours de technique du comédien</p>
+ </div>
+ <div class="case">
+     <img src="igor.jpg" width="290" height="300" alt="Igor Gennadievitch Blinkov">
+     <h2>Igor Gennadievitch Blinkov</h2>
+     <p>Cours de technique du comédien</p>
+ </div>
+
+ <div class="case">
+     <img src="serguei2.jpg" width="290" height="300" alt="Serguei Aleksandrovitch Koulajenko">
+     <h2>Serguei Aleksandrovitch Koulajenko</h2>
+     <p>Cours de technique du comédien et spécialisé dans le systéme Stanislavski</p>
+ </div>
+ <div class="case">
+     <img src="marina.jpg" width="290" height="300" alt="Filatova Marina Viktorovna">
+     <h2>Filatova Marina Viktorovna</h2>
+     <p>Professeur de danse</p>
+ </div>
+ <div class="case">
+     <img src="Aleksandra.jpg" width="290" height="300" alt="Alexandra Vitaliévna Kazianina">
+     <h2>Alexandra Vitaliévna Kazianina</h2>
+     <p>Professeur de danse</p>
+ </div>
+ <div class="case">
+     <img src="Aleksandra2.jpg" width="290" height="300" alt="">
+     <h2>Alexandra Izraelovna Sandler</h2>
+     <p>Cours de tampo/rythme</p>
+ </div>
+ <div class="case">
+     <img src="ilona.jpg" width="290" height="300" alt="Kazakevitch Ilona Sergueievna">
+     <h2>Kazakevitch Ilona Sergueievna</h2>
+     <p>Cours de chant</p>
+ </div>
+ <div class="case">
+     <img src="tatiana.jpg" width="290" height="300" alt="Panassiuk Tatiana Alexsandrovna">
+     <h2>Panassiuk Tatiana Alexsandrovna</h2>
+     <p>Cours de piano</p>
+ </div>
+ <div class="case">
+     <img src="natalia.jpg" width="290" height="300" alt="Slachtcheva Natalia Aleksandrovna">
+     <h2>Slachtcheva Natalia Aleksandrovna</h2>
+     <p>Cours de claquettes</p>
+ </div>
+ <div class="case">
+     <img src="sergei.jpg" width="290" height="300" alt="Efremov Sergei Nikolaevitch">
+    <h2>Efremov Sergei Nikolaevitch</h2>
+     <p>Cours de combat et d'escrime</p>
+ </div>
+ <div class="case">
+     <img src="anastasia.jpg" width="290" height="300" alt="Voltchek Anastasia Igorévna">
+     <h2>Voltchek Anastasia Igorévna</h2>
+     <p>Cours de flamenco</p>
+ </div>
+ <div class="case">
+     <img src="pavel.jpg" width="290" height="300" alt="Evtouchenko Pavel Ivanovitch">
+      <h2>Evtouchenko Pavel Ivanovitch</h2>
+     <p>Cours de Diction</p>
+ </div>
+
+ <div class="case">
+    <img src="konstantine.jpg" width="290" height="300" alt="Mamatiouk Konstantine Vassilievitch">
+    <h2>Mamatiouk Konstantine Vassilievitch</h2>
+    <p>Cours de maquillage</p>
+</div>
+<div class="case">
+    <img src="olga.jpg" width="290" height="300" alt="Minitch Olga Valerievna">
+    <h2>Minitch Olga Valerievna</h2>
+    <p>Administation de projet</p>
+</div>
+
+<div class="case">
+    <img src="yulia.jpg" width="290" height="300" alt="Boukchtanovitch Yulia Sergeevna">
+    <h2>Boukchtanovitch Yulia Sergeevna</h2>
+    <p>Professeur de russe et traductrice</p>
+</div>
+
+
+<div class="case">
+    <img src="anna.jpg" width="290" height="300" alt="Fedorak Anna Igorevna">
+    <h2>Fedorak Anna Igorevna</h2>
+    <p>Administration et coordination</p>
+</div>
+<div class="case">
+    <img src="victoria.jpg" width="290" height="300" alt="Novikova Victoria Viktorovna">
+    <h2>Novikova Victoria Viktorovna</h2>
+    <p>Coordination de projet et traductrice</p>
+</div>
+<div class="case">
+    <img src="yuri.jpg" width="290" height="300" alt="Zaharadniuk Yury Ivanovich">
+    <h2>Zaharadniuk Yury Ivanovich</h2>
+    <p>Organisation et coordination</p>
+</div>
+<div class="case">
+    <img src="alexey.jpg" width="290" height="300" alt="Ichtchenko Alexey">
+    <h2>Ichtchenko Alexey</h2>
+    <p>Spécialiste des questions de théorie de la musique</p>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="case">
+    <img src="natasha.jpg" width="290" height="300" alt="Osipova Natacha">
+    <h2>Osipova Natacha</h2>
+    <p>Préparation des repas à midi et achat des courses.</p>
+</div>
+
+
+
+<div class="case">
+    <img src="andrei.jpg" width="290" height="300" alt="Savtchenko Andrei Victorovitch">
+    <h2>Savtchenko Andrei Victorovitch
+    </h2>
+    <p>Metteur en scène de théâtre dramatique</p>
+</div>
+
+
+<div class="case">
+    <img src="andrei.jpg" width="290" height="300" alt="Savtchenko Andrei Victorovitch">
+    <h2>Zakharov Kirill Valerevich
+    </h2>
+    <p>Acteur de théâtre et de cinéma, metteur en scène et professeur de technique du comédien</p>
+</div>
+
+
+<div class="case">
+    <img src="irina.jpg" width="290" height="300" alt="Kabanova Irina">
+    <h2>Kabanova Irina
+    </h2>
+    <p>professeur de diction et chef de la chaire de diction scénique et de chant à l’Académie des Arts</p>
+</div>
+
+
+
+<div class="case">
+    <img src="pavel2.jpg" width="290" height="300" alt="Adamtchikov Pavel">
+    <h2>Adamtchikov Pavel
+    </h2>
+    <p>Acteur de cinéma et comédien et metteur en scène de spectacles plastiques</p>
+</div>
+
+
+
+<div class="case">
+    <img src="igor2.jpg" width="290" height="300" alt="Petrov Igor">
+    <h2>Petrov Igor
+    </h2>
+    <p>Diplômé de l’académie des Arts du Bélarus. Comédien dans la troupe du théâtre National du Bélarus depuis 1999, il est également metteur en scène et travaille avec le studio Meyerhold de Moscou</p>
+</div>
+
+<div class="case">
+    <img src="pauline.jpg" width="290" height="300" alt="Remond Pauline">
+    <h2>Remond Pauline
+    </h2>
+    <p>Membre du Conseil d'administration de Demain le Printemps et secrétaire du bureau.
+
+    </p>
+</div>
+
+
+<div class="case">
+    <img src="lidia.jpg" width="290" height="300" alt="Monakova Lidia Alekseevna">
+    <h2>Monakova Lidia Alekseevna
+    </h2>
+    <p>Cours de téchnique du comédien
+
+    </p>
+</div>
+
+
+<div class="case">
+    <img src="audrey.jpg" width="290" height="300" alt="Thizy Audrey">
+    <h2>Thizy Audrey
+    </h2>
+    <p>Assistante de direction
+
+
+    </p>
+</div>
+
+
+
+<div class="case">
+    <img src="youri.jpg" width="290" height="300" alt="Yanovich Youri Adamovitch">
+    <h2>Yanovich Youri Adamovitch
+    </h2>
+    <p>
+
+
+    </p>
+</div>
+
+
+<div class="case">
+    <img src="maxime.jpg" width="290" height="300" alt="Nastoiachtchi Maxime Dmitrievitch">
+    <h2>Nastoiachtchi Maxime Dmitrievitch
+    </h2>
+    <p>
+
+
+    </p>
+</div>
+
+
+
+
+
+
+
+
+
+
+</main>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<footer>
+    <footer>
+      <div class="titre">
+          <img src="Logo_DLP.png" width="290px" alt="Logo Demain le Printemps">
+      </div>
+  
+      <div class="conteneur">
+          <div class="sous-conteneur">
+              <h2>Adresse</h2>
+              <p><a href="https://www.google.com/maps/dir//7+Rue+de+Rome+d21,+94800+Villejuif/@48.788797,2.2894704,12z/data=!4m8!4m7!1m0!1m5!1m1!1s0x47e673e5ec5dffa1:0xc0c3e7f8ef4c1de6!2m2!1d2.3718717!2d48.7887133?entry=ttu" target="_blank">7 rue de Rome D21<br>94800 Villejuif</a></p>
+          </div>
+  
+          <div class="sous-conteneur">
+              <h2>Contact</h2>
+              <p><a href="https://wa.me/+33615199248?text=Hello%2C%20I'm%20interested%20in%20your%20school.%20Could%20you%20provide%20me%20with%20more%20information%3F" target="_blank">+33 6 15 19 92 48</a><br>
+                <a href="mailto:demainleprintemps@gmail.com?subject=Request%20for%20Information%20about%20the%20Theater%20School&body=Hello,%0A%0AI%20am%20interested%20in%20your%20theater%20school.%20Could%20you%20provide%20me%20with%20more%20information?%0A%0AThank%20you." target="_blank" >demainleprintemps@gmail.com</a></p>
+          </div>
+  
+          <div class="sous-conteneur">
+              <h2>Horaires</h2>
+              <p>Du lundi au samedi<br>de 9h à 21h</p>
+          </div>
+      </div>
+  </footer>
+
+
+</body>
+</html> 

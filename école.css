@@ -1,0 +1,117 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@1,438&display=swap');
+
+/* Styles de base */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color:black;
+    color: white;
+    font-family: "Montserrat", sans-serif;
+}
+
+main {
+    padding: 20px;
+}
+
+ main .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 80%;
+    max-width: 1200px;
+    background-color: #fff;
+    padding: 20px;
+    margin: 20px auto;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+}
+
+main .first-text, .second-text {
+    width: 100%;
+    margin: 20px 0;
+    text-align: center;
+}
+
+ main .first-text h3 {
+    font-size: 1.8em;
+    margin: 0;
+}
+
+main .second-text {
+    font-size: 2em;
+    margin: 0;
+}
+
+ main .image-gauche {
+    border-radius: 10px;
+    max-width: 45%;
+    height: auto;
+}
+
+ main .texte-droite {
+    max-width: 45%;
+    margin-left: 20px;
+    text-align: justify;
+    color: black;
+}
+
+main .texte-droite p {
+    font-size: 18px;
+    line-height: 1.6;
+}
+
+main .full-width-image {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    margin: 20px 0;
+}
+
+main .main-formation {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+main .frame {
+    background-color: #fff;
+    padding: 20px;
+    margin: 10px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    max-width: 45%;
+    text-align: center;
+}
+
+ main .frame h2{
+    color: black;
+}
+
+ main .price {
+    font-size: 1.2em;
+    color: #e74c3c;
+}
+
+ main .learn-more {
+    background-color: black;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 1em;
+    border-radius: 5px;
+    cursor: pointer;
+    text-transform: uppercase;
+}
+
+main .learn-more:hover {
+    background-color: #00304d;
+    transition: ease-in 1s;
+}
+main li{
+    list-style-type: none;
+    color: black;
+}
+
+

@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+  <html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="presse-multimedia.css">
+    <link rel="shortcut icon" href="images-icon.webp">
+    <title>Presse et multimedia</title>
+  </head>
+  <body>
+    <!-- En-tête de la page -->
+   <header>
+    <!-- Conteneur du logo et des icônes de réseaux sociaux -->
+    <div class="conteneur">
+        <!-- Logo -->
+        <div class="logo">
+            <a href=""><img src="https://www.ecole-theatrale.com/images/partenaires/Logo_DLP.png" width="290px" alt=""></a>
+        </div>
+        <!-- Icônes de réseaux sociaux -->
+        <div class="icones">
+            <a href="https://www.instagram.com/demainleprintemps?igsh=eWc1bHJqZ3NnN3d6" target="_blank"><img src="instagram.png" alt="Instagram"></a>
+            <a href="https://www.facebook.com/share/rHpaiGdb5vSHbYr9/?mibextid=LQQJ4d" target="_blank"><img src="facebook.png" alt="Facebook"></a>
+            <a href="https://x.com/ecoletheatrale?s=21&t=O5NOC0WPUXTLkObxIAntFA" target="_blank"><img src="twitter.png" alt="Twitter"></a>
+            <a href="https://youtube.com/@demainleprintempsecolethea2147?si=VA9rE7H1rggAMFvh" target="_blank"><img src="youtube.png" alt="YouTube"></a>
+        </div>
+    </div>
+    <!-- Barre de navigation -->
+     <div class="sticky">
+
+    
+    <div class="conteneur2">
+        <nav>
+            <ul class="menu">
+                <!-- Éléments du menu -->
+                <li>
+                    <a href="index.html">École</a>
+                    <!-- Sous-menu -->
+                    <ul class="submenu">
+                        <li><a href="">Contenu Pédagogique</a></li>
+                        <li><a href="#">Notre équipe Pédagogique</a></li>
+                        <li><a href="#">Nos Disciplines</a></li>
+                        <li><a href="#">Pas besoins de parler russe</a></li>
+                        <li><a href="#">Tarifs et devis</a></li>
+                        <li><a href="#">Se cultiver</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#">Formation +</a>
+                    <ul class="submenu">
+                        <li><a href="#">Le stage d'un mois</a></li>
+                        <li><a href="#">La masterclass 10 mois</a></li>
+                        <li><a href="#">Admissions</a></li>
+                        <li><a href="#">Ateliers découverte</a></li>
+                        <li><a href="#">Hébergement</a></li>
+                        <li><a href="#">Diplômes de fin de formation</a></li>
+                        <li><a href="#">Programmes spéciaux pour le Maghreb</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#">Les élèves +</a>
+                    <ul class="submenu">
+                        <li><a href="portraitancien.html">Portrait d'anciens</a></li>
+                        <li><a href="https://demainleprintemps.wordpress.com/" target="_blank" >Blog</a></li>
+                    </ul>
+                </li>
+                <li><a href="presse-multimedia.html">Presse et Multimédia</a></li>
+                <li>
+                    <a href="">Associations +</a>
+                    <ul class="submenu">
+                        <li><a href="#">D.L.P</a></li>
+                        <li><a href="collectif.html">Collectif</a></li>
+                        <li><a href="http://www.moo-teatro.by/" target="_blank">Moo treatro</a></li>
+                        
+                        <li><a href="https://ecole-theatrale.com/images/pdf/Asso_DLP_adh%C3%A9sion(2018).pdf" target="_blank">Nous soutenir</a></li>
+                        <li><a href="Partenaires.html">Partenaires</a></li>
+                        <li><a href="developpeur.html">Développeurs</a></li>
+                    </ul>
+                </li>
+                <li><a href="Actualite.html">Actualités</a></li>
+            </ul>
+        </nav>
+        <!-- Bouton de contact WhatsApp -->
+        <div class="boutton">
+            <a href="https://wa.me/+33615199248?text=Hello%2C%20I'm%20interested%20in%20your%20school.%20Could%20you%20provide%20me%20with%20more%20information%3F" target="_blank" class="whatsapp-link"><button>+33 6 15 19 92 48</button></a>
+        </div>
+    </div>
+     </div>
+    <!-- Script JavaScript -->
+<script>
+    document.addEventListener('DOMContentLoaded', function() {
+        // Gestion de l'ouverture des sous-menus
+        var menuItems = document.querySelectorAll('nav .menu > li > a');
+        var openSubmenu = null;
+
+        menuItems.forEach(function(menuItem) {
+            menuItem.addEventListener('click', function(event) {
+                var submenu = this.nextElementSibling;
+
+                if (submenu && submenu.classList.contains('submenu')) {
+                    if (submenu.style.display === 'block') {
+                        // Si le sous-menu est déjà ouvert, suivre le lien
+                        return true;
+                    } else {
+                        // Si le sous-menu n'est pas ouvert, l'ouvrir et empêcher l'action par défaut
+                        event.preventDefault();
+                        closeAllSubmenus();
+                        submenu.style.display = 'block';
+                        openSubmenu = submenu;
+                    }
+                }
+            });
+        });
+
+        document.addEventListener('click', function(event) {
+            if (openSubmenu && !event.target.closest('nav .menu > li')) {
+                openSubmenu.style.display = 'none';
+                openSubmenu = null;
+            }
+        });
+
+        function closeAllSubmenus() {
+            var submenus = document.querySelectorAll('nav .submenu');
+            submenus.forEach(function(submenu) {
+                submenu.style.display = 'none';
+            });
+        }
+    });
+
+  
+    
+    
+      </script>
+</header>
+
+<main>
+    <div class="titre">
+      <h1>Presse et Multimedia</h1>
+    </div>
+   
+
+     <div class="conteneur1">
+<h3>Presse National</h3>
+        <div class="sous-conteneur1">
+              <a href=""><img src="journalNTL1.jpg" alt="" width="230px" height="300px"></a> 
+              <a href=""><img src="journalNTL2.jpg" alt="" width="230px" height="300px"></a>
+              <a href=""><img src="journalNTL3.jpg" alt="" width="230px" height="300px"></a>
+        </div>
+
+        <div class="sous-conteneur1">
+            <a href=""><img src="journalNTL4.jpg" alt="" width="230px" height="300px"></a> 
+            <a href=""><img src="journalNTL5.jpg" alt="" width="230px" height="300px"></a>
+            <a href=""><img src="journalNTL6.jpg" alt="" width="230px" height="300px"></a>
+      </div>
+
+      <div class="sous-conteneur2">
+        <a href=""><img src="journalNTL7.jpg" alt="" width="230px" height="300px"></a> 
+      
+  </div>
+       
+     </div>
+    
+
+
+
+
+     <div class="conteneur2">
+        <h3>Presse International</h3>
+                <div class="sous-conteneur1">
+                      <a href=""><img src="journalITN1.jpg" alt="" width="230px" height="300px"></a> 
+                      <a href=""><img src="journalITN2.jpg" alt="" width="230px" height="300px"></a>
+                      <a href=""><img src="journalITN3.jpg" alt="" width="230px" height="300px"></a>
+                </div>
+        
+                <div class="sous-conteneur1">
+                    <a href=""><img src="journalITN4.jpg" alt="" width="230px" height="300px"></a> 
+                    <a href=""><img src="journalITN5.jpg" alt="" width="230px" height="300px"></a>
+                    <a href=""><img src="journalITN6.jpg" alt="" width="230px" height="300px"></a>
+              </div>
+        
+              <div class="sous-conteneur2">
+                <a href=""><img src="journalITN7.jpg" alt="" width="230px" height="300px"></a> 
+                <a href=""><img src="journalITN8.jpg" alt="" width="230px" height="300px"></a> 
+          </div>
+               
+             </div>
+     
+</main>
+
+
+
+
+
+<footer>
+    <footer>
+      <div class="titre">
+          <img src="Logo_DLP.png" width="290px" alt="Logo Demain le Printemps">
+      </div>
+  
+      <div class="conteneur">
+          <div class="sous-conteneur">
+              <h2>Adresse</h2>
+              <p><a href="https://www.google.com/maps/dir//7+Rue+de+Rome+d21,+94800+Villejuif/@48.788797,2.2894704,12z/data=!4m8!4m7!1m0!1m5!1m1!1s0x47e673e5ec5dffa1:0xc0c3e7f8ef4c1de6!2m2!1d2.3718717!2d48.7887133?entry=ttu" target="_blank">7 rue de Rome D21<br>94800 Villejuif</a></p>
+          </div>
+  
+          <div class="sous-conteneur">
+              <h2>Contact</h2>
+              <p><a href="https://wa.me/+33615199248?text=Hello%2C%20I'm%20interested%20in%20your%20school.%20Could%20you%20provide%20me%20with%20more%20information%3F" target="_blank">+33 6 15 19 92 48</a><br>
+                <a href="mailto:demainleprintemps@gmail.com?subject=Request%20for%20Information%20about%20the%20Theater%20School&body=Hello,%0A%0AI%20am%20interested%20in%20your%20theater%20school.%20Could%20you%20provide%20me%20with%20more%20information?%0A%0AThank%20you." target="_blank" >demainleprintemps@gmail.com</a></p>
+          </div>
+  
+          <div class="sous-conteneur">
+              <h2>Horaires</h2>
+              <p>Du lundi au samedi<br>de 9h à 21h</p>
+          </div>
+      </div>
+  </footer>
+
+</body>
+</html> 

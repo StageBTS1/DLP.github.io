@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <!-- Metadonnées -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Liens vers les feuilles de style -->
+    <link rel="stylesheet" href="style.css">
+    <!-- Titre de la page -->
+    <title>DLP</title>
+    <!-- Icône de la page -->
+    <link rel="shortcut icon" href="images-icon.webp" type="img/icon">
+ 
+</head>
+<body>
+   <!-- En-tête de la page -->
+   <header>
+       <!-- Conteneur du logo et des icônes de réseaux sociaux -->
+       <div class="conteneur">
+           <!-- Logo -->
+           <div class="logo">
+               <a href=""><img src="https://www.ecole-theatrale.com/images/partenaires/Logo_DLP.png" width="290px" alt=""></a>
+           </div>
+           <!-- Icônes de réseaux sociaux -->
+           <div class="icones">
+               <a href="https://www.instagram.com/demainleprintemps?igsh=eWc1bHJqZ3NnN3d6" target="_blank"><img src="instagram.png" alt="Instagram"></a>
+               <a href="https://www.facebook.com/share/rHpaiGdb5vSHbYr9/?mibextid=LQQJ4d" target="_blank"><img src="facebook.png" alt="Facebook"></a>
+               <a href="https://x.com/ecoletheatrale?s=21&t=O5NOC0WPUXTLkObxIAntFA" target="_blank"><img src="twitter.png" alt="Twitter"></a>
+               <a href="https://youtube.com/@demainleprintempsecolethea2147?si=VA9rE7H1rggAMFvh" target="_blank"><img src="youtube.png" alt="YouTube"></a>
+           </div>
+       </div>
+       <!-- Barre de navigation -->
+        <div class="sticky">
+
+       
+       <div class="conteneur2">
+           <nav>
+               <ul class="menu">
+                   <!-- Éléments du menu -->
+                   <li>
+                       <a href="">École</a>
+                       <!-- Sous-menu -->
+                       <ul class="submenu">
+                           <li><a href="">Contenu Pédagogique</a></li>
+                           <li><a href="#">Notre équipe Pédagogique</a></li>
+                           <li><a href="#">Nos Disciplines</a></li>
+                           <li><a href="#">Pas besoins de parler russe</a></li>
+                           <li><a href="#">Tarifs et devis</a></li>
+                           <li><a href="#">Se cultiver</a></li>
+                       </ul>
+                   </li>
+                   <li>
+                       <a href="#">Formation +</a>
+                       <ul class="submenu">
+                           <li><a href="#">Le stage d'un mois</a></li>
+                           <li><a href="#">La masterclass 10 mois</a></li>
+                           <li><a href="#">Admissions</a></li>
+                           <li><a href="#">Ateliers découverte</a></li>
+                           <li><a href="#">Hébergement</a></li>
+                           <li><a href="#">Diplômes de fin de formation</a></li>
+                           <li><a href="#">Programmes spéciaux pour le Maghreb</a></li>
+                       </ul>
+                   </li>
+                   <li>
+                       <a href="#">Les élèves +</a>
+                       <ul class="submenu">
+                           <li><a href="portraitancien.html">Portrait d'anciens</a></li>
+                           <li><a href="https://demainleprintemps.wordpress.com/" target="_blank" >Blog</a></li>
+                       </ul>
+                   </li>
+                   <li><a href="presse-multimedia.html">Presse et Multimédia</a></li>
+                   <li>
+                       <a href="">Associations +</a>
+                       <ul class="submenu">
+                           <li><a href="#">D.L.P</a></li>
+                           <li><a href="collectif.html">Collectif</a></li>
+                           <li><a href="http://www.moo-teatro.by/" target="_blank">Moo treatro</a></li>
+                           <li><a href="https://ecole-theatrale.com/images/pdf/Asso_DLP_adh%C3%A9sion(2018).pdf" target="_blank"> Nous soutenir</a></li>
+                           <li><a href="Partenaires.html">Partenaires</a></li>
+                           <li><a href="developpeur.html">Développeurs</a></li>
+                       </ul>
+                   </li>
+                   <li><a href="Actualite.html">Actualités</a></li>
+               </ul>
+           </nav>
+           <!-- Bouton de contact WhatsApp -->
+           <div class="boutton">
+               <a href="https://wa.me/+33615199248?text=Hello%2C%20I'm%20interested%20in%20your%20school.%20Could%20you%20provide%20me%20with%20more%20information%3F" target="_blank" class="whatsapp-link"><button>+33 6 15 19 92 48</button></a>
+           </div>
+       </div>
+        </div>
+       <!-- Script JavaScript -->
+   <script>
+       document.addEventListener('DOMContentLoaded', function() {
+           // Gestion de l'ouverture des sous-menus
+           var menuItems = document.querySelectorAll('nav .menu > li > a');
+           var openSubmenu = null;
+
+           menuItems.forEach(function(menuItem) {
+               menuItem.addEventListener('click', function(event) {
+                   var submenu = this.nextElementSibling;
+
+                   if (submenu && submenu.classList.contains('submenu')) {
+                       if (submenu.style.display === 'block') {
+                           // Si le sous-menu est déjà ouvert, suivre le lien
+                           return true;
+                       } else {
+                           // Si le sous-menu n'est pas ouvert, l'ouvrir et empêcher l'action par défaut
+                           event.preventDefault();
+                           closeAllSubmenus();
+                           submenu.style.display = 'block';
+                           openSubmenu = submenu;
+                       }
+                   }
+               });
+           });
+
+           document.addEventListener('click', function(event) {
+               if (openSubmenu && !event.target.closest('nav .menu > li')) {
+                   openSubmenu.style.display = 'none';
+                   openSubmenu = null;
+               }
+           });
+
+           function closeAllSubmenus() {
+               var submenus = document.querySelectorAll('nav .submenu');
+               submenus.forEach(function(submenu) {
+                   submenu.style.display = 'none';
+               });
+           }
+       });
+
+
+       
+         </script>
+
+   </header>
+
+
+
+
+
+
+
+
+
+
+   <main>
+    <div class="titre">
+         <h1>L’école théâtrale russe</h1>
+  <p>Demain le Printemps est une école de théâtre à Minsk, en Biélorussie. Elle permet de découvrir une autre approche de l’art de l’acteur, initiée à la fin du XIXème siècle. Elle s’appuie sur les principes et les méthodes de Stanislavsky, Michael Chekhov, Meyerhold et Tovstonogov.</p>
+    </div>
+ 
+
+    <section class="first-text">
+        <h3>
+            Formation d'Acteur<br>
+            Héritière de l'École Théâtrale Soviétique pour les francophones à Minsk (Belarus)
+        </h3>
+    </section>
+
+    <section class="container">
+        <img src="atelierdec.webp" alt="Atelier découverte" class="image-gauche">
+        <div class="texte-droite">
+            <h2>A LA UNE</h2>
+            <p>
+                Inscriptions ouvertes ! « Demain le printemps » vous propose une formation théâtre intensif à Minsk, la capitale Biélorusse. Au programme : immersion intensive et pluridisciplinaire de quatre semaines (40h/semaine).
+            </p>
+        </div>
+    </section>
+
+    <section>
+        <img src="formation.webp" width="10px" class="full-width-image" alt="Formation Image">
+    </section>
+
+ <section class="first-text">
+        <h2 class="second-text">NOS FORMATIONS</h2>
+    </section>
+
+    <section class="main-formation">
+        <div class="frame">
+            <h2>STAGE - CURSUS INTENSIF</h2>
+            <p class="price">550€ Le mois de stage</p>
+            <hr>
+            <ul>
+                <li>Un total de 200h</li>
+                <li>(1 Mois en août 2024)</li>
+                <li>11 disciplines, spectacle en fin de stage</li>
+            </ul>
+            <a href="" target="_blank">
+                <button class="learn-more">EN SAVOIR PLUS</button>
+            </a>
+        </div>
+        <div class="frame">
+            <h2>MASTERCLASS - CURSUS COMPLET</h2>
+            <p class="price">390€/Mois</p>
+            <hr>
+            <ul>
+                <li>Un total de 1440h</li>
+                <li>(9 Mois de Octobre 2024-Juin 2025)</li>
+                <li>12 disciplines 35 Représentations</li>
+            </ul>
+            <a href="" target="_blank">
+                <button class="learn-more">EN SAVOIR PLUS</button>
+            </a>
+        </div>
+    </section>
+
+    <div class="postuler">
+        <h2>Comment postuler ?</h2>
+
+        <div class="container">
+            <div class="step">
+                <h1>1</h1>
+                <h2>Premier Contact</h2>
+                <p>Envoyer CV et photos par mail :<br>demainleprintemps@gmail.com</p>
+            </div>
+            <div class="arrow">&#10140;</div>
+            <div class="step">
+                <h1>2</h1>
+                <h2>Entretien d'intégration</h2>
+                <p>Dossier à remplir et RDV<br>(possible sur skype)</p>
+            </div>
+            <div class="arrow">&#10140;</div>
+            <div class="step">
+                <h1>3</h1>
+                <h2>Inscription définitive</h2>
+            </div>
+        </div>
+    
+
+    </div>
+</main>
+
+
+
+
+
+
+
+
+
+
+<footer>
+  <footer>
+    <div class="titre">
+        <img src="Logo_DLP.png" width="290px" alt="Logo Demain le Printemps">
+    </div>
+
+    <div class="conteneur">
+        <div class="sous-conteneur">
+            <h2>Adresse</h2>
+            <p><a href="https://www.google.com/maps/dir//7+Rue+de+Rome+d21,+94800+Villejuif/@48.788797,2.2894704,12z/data=!4m8!4m7!1m0!1m5!1m1!1s0x47e673e5ec5dffa1:0xc0c3e7f8ef4c1de6!2m2!1d2.3718717!2d48.7887133?entry=ttu" target="_blank">7 rue de Rome D21<br>94800 Villejuif</a></p>
+        </div>
+
+        <div class="sous-conteneur">
+            <h2>Contact</h2>
+            <p><a href="https://wa.me/+33615199248?text=Hello%2C%20I'm%20interested%20in%20your%20school.%20Could%20you%20provide%20me%20with%20more%20information%3F" target="_blank">+33 6 15 19 92 48</a><br>
+              <a href="mailto:demainleprintemps@gmail.com?subject=Request%20for%20Information%20about%20the%20Theater%20School&body=Hello,%0A%0AI%20am%20interested%20in%20your%20theater%20school.%20Could%20you%20provide%20me%20with%20more%20information?%0A%0AThank%20you." target="_blank" >demainleprintemps@gmail.com</a></p>
+        </div>
+
+        <div class="sous-conteneur">
+            <h2>Horaires</h2>
+            <p>Du lundi au samedi<br>de 9h à 21h</p>
+        </div>
+    </div>
+</footer>
+
+</body>
+</html>
